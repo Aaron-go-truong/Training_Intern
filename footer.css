@@ -1,156 +1,227 @@
-
 .footer {
-    height: 100%;
-    background-color: #011424;
+  height: 100%;
+  background-color: #011424;
+}
+
+.footer-section {
+  padding-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.block1-title {
+  font-family: "Forma DJR Banner";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}
+
+.finance-btn {
+  margin-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: 1px solid #ffffff;
+  border-radius: 26px;
+  height: 52px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.finance_btncontent {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 80px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.box-distance {
+  height: 378px;
+}
+
+.privacy-bar {
+  margin-top: 16.5px;
+  border-top: 1px solid #ffffff;
+}
+
+.bar-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bar-left {
+  display: flex;
+}
+
+.bar-content {
+  margin-right: 50px;
+  padding: 20px 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.bar-right {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+}
+
+.block2-content {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+}
+
+.block2_list-icon {
+  margin-top: 80px;
+}
+
+.block2_icon-link {
+  margin-right: 20px;
+}
+
+.block3-title {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.35);
+  margin-bottom: 15px;
+}
+
+.block3-content {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+.block4-content {
+  padding: 15px 0;
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+}
+
+.block1 {
+  max-width: 276px;
+}
+
+.block2 {
+  max-width: 356px;
+}
+.block4 {
+  margin-top: 20px;
+}
+
+@media (max-width: 1075px) {
+  .block2 {
+    max-width: 250px;
   }
-  
+  .block1 {
+    max-width: 200px;
+  }
+  .block2_list-icon {
+    margin-top: 105px;
+  }
+}
+
+@media (max-width: 910px) {
+  .block2 {
+    max-width: 200px;
+  }
+  .block2_list-icon {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 705px) {
+  .block1 {
+    max-width: 190px;
+  }
+  .block2 {
+    max-width: 190px;
+  }
+  .block2_list-icon {
+    margin-top: 55px;
+  }
+}
+@media (max-width: 555px) {
   .footer-section {
+    position: relative;
     padding-top: 60px;
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    padding: 20px;
   }
-  
-  .block1-title {
-    font-family: "Forma DJR Banner";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 40px;
-    letter-spacing: 0.03em;
-  
-    color: #ffffff;
+  .block1 {
+    max-width: 100%;
+    margin-bottom: 20px;
   }
-  
-  .finance-btn {
-    margin-top: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-    border: 1px solid #ffffff;
-    border-radius: 26px;
-    height: 52px;
-    width: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .block2 {
+    max-width: 100%;
+    margin-bottom: 20px;
   }
-  
-  .finance_btncontent {
-    font-family: "Helvetica Neue";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 80px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-  
-    color: #ffffff;
+
+  .block4{
+    margin-bottom: 120px;
   }
-  
-  .box-distance {
-    height: 378px;
+
+  .finance-btn{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
-  
-  .privacy-bar {
-    margin-top: 16.5px;
-    border-top: 1px solid #ffffff;
+  .block2_list-icon{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
   
   .bar-items {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    padding-bottom: 20px;
   }
-  
-  .bar-left {
-    display: flex;
-  }
-  
-  .bar-content {
-    margin-right: 50px;
-    padding: 20px 0;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    color: #ffffff;
-  }
-  
-  .bar-right {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 14px;
-    display: flex;
-    align-items: center;
-  
-    color: #ffffff;
-  }
-  
-  .block2-content {
-    font-family: "Helvetica Neue";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    display: flex;
-    align-items: center;
-  
-    color: #ffffff;
-  }
-  
-  .block2_list-icon {
-    margin-top: 80px;
-  }
-  
-  .block2_icon-link {
-    margin-right: 20px;
-  }
-  
-  .block3-title {
-    font-family: "Helvetica Neue";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    color: rgba(255, 255, 255, 0.35);
-    margin-bottom: 15px;
-  }
-  
-  .block3-content {
-    font-family: "Helvetica Neue";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    color: #ffffff;
-    margin-bottom: 15px;
-  }
-  .block4-content {
-    padding: 15px 0;
-    font-family: "Helvetica Neue";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-  
-    display: flex;
-    align-items: center;
-  
-    color: #ffffff;
-  }
-  
-  .block1 {
-    max-width: 276px;
-  }
-  
-  .block2 {
-    max-width: 356px;
-  }
-  .block4 {
-    margin-top: 20px;
-  }
-  
-  
+}
