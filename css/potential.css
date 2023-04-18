@@ -60,14 +60,14 @@
 
 @media (max-width: 820px) {
   .potential {
-   left: 0;
-   right: 0;
-   width: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
   }
 }
 
 @media (max-width: 760px) {
-  .potential{
+  .potential {
     top: -30%;
   }
 }
@@ -84,9 +84,21 @@
   .potential {
     left: 50%;
     transform: translate(-50%, 0);
-    padding: 50px;
+    padding: 20px;
   }
   .potential-content {
     margin-left: 25px;
+  }
+  .potential-title {
+    font-family: "Forma DJR Banner";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+    /* or 133% */
+
+    letter-spacing: 0.03em;
+
+    color: #ffffff;
   }
 }
