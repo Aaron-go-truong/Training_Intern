@@ -1,0 +1,79 @@
+.solutions {
+  margin-top: 50px;
+}
+
+.solutions-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.solution {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 33.333333%;
+}
+
+.solution-title {
+  font-family: "Forma DJR Banner";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+  letter-spacing: 0.03em;
+  color: #041e33;
+}
+
+.solution_img {
+  margin-right: 32px;
+}
+
+.solution_content {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #506373;
+}
+
+@media (max-width: 820px) {
+    .solutions {
+        margin-right: 25px;
+        margin-left: 25px;
+      }
+  }
+
+@media (max-width: 670px) {
+
+ 
+
+  .solutions-item {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .solution {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .solution-title {
+    font-family: "Forma DJR Banner";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 0.03em;
+
+    color: #041e33;
+  }
+}

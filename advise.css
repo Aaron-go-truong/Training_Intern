@@ -1,0 +1,74 @@
+.advise {
+  margin-top: 34px;
+  background: #041e33;
+  display: flex;
+  justify-content: space-between;
+}
+
+.advise_content {
+  margin: 48px;
+}
+
+.advise_title {
+  font-family: "Forma DJR Banner";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 45px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.advise_desc {
+  margin-top: 25px;
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #b1b7c2;
+}
+
+.advise_img {
+  width: 45%;
+}
+
+@media (max-width: 620px) {
+  .advise {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .advise_img {
+    width: 100%;
+    order: 1;
+  }
+
+  .advise_content {
+    order: 2;
+  }
+}
+
+@media (max-width: 420px) {
+  .advise_title {
+    font-family: "Forma DJR Banner";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 45px;
+
+    letter-spacing: 0.03em;
+
+    color: #ffffff;
+  }
+
+  .advise_desc {
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #b1b7c2;
+  }
+}

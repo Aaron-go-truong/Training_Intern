@@ -1,0 +1,86 @@
+.frequently-ques {
+  border-top: 1px solid #e5e5e5;
+  margin-top: 50px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.frequently-ques_title {
+  margin-top: 50px;
+
+  font-family: "Forma DJR Banner";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 45px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.frequently-ques_content {
+  margin-top: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ques-content_title {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+  letter-spacing: -0.01em;
+
+  color: #008cdb;
+}
+
+.ques-content_desc {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+
+  color: #ffffff;
+}
+
+.frequently-ques-col {
+  width: 45%;
+}
+
+@media (max-width: 760px) {
+  .frequently-ques-col {
+    width: 100%;
+  }
+  .frequently-ques_content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .frequently-ques {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+
+}
+
+@media (max-width: 520px) {
+  .frequently-ques-col {
+    width: 100%;
+  }
+  .frequently-ques_content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .frequently-ques {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+}

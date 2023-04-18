@@ -1,0 +1,92 @@
+.potential {
+  margin-top: 20px;
+  top: -40%;
+  position: absolute;
+  background: #008cdb;
+  padding: 42px;
+}
+
+.potential-title {
+  font-family: "Forma DJR Banner";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 45px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.potential-items {
+  border-top: 1px solid #e5e5e5;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.potential-item {
+  flex-basis: 33.333333%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: start;
+}
+.potential-content {
+  margin-left: 25px;
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 70px;
+  color: #ffffff;
+}
+
+@media (max-width: 1200px) {
+  .potential-content {
+    margin-left: 5px;
+  }
+
+  .potential {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 1048px) {
+  .potential-item {
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 820px) {
+  .potential {
+   left: 0;
+   right: 0;
+   width: 100%;
+  }
+}
+
+@media (max-width: 760px) {
+  .potential{
+    top: -30%;
+  }
+}
+
+@media (max-width: 700px) {
+  .potential-items {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .potential {
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 50px;
+  }
+  .potential-content {
+    margin-left: 25px;
+  }
+}
