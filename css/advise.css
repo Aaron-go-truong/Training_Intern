@@ -1,8 +1,9 @@
 .advise {
-  margin-top: 34px;
-  background: #041e33;
   display: flex;
   justify-content: space-between;
+
+  margin-top: 34px;
+  background: #041e33;
 }
 
 .advise_content {
@@ -56,9 +57,7 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 45px;
-
     letter-spacing: 0.03em;
-
     color: #ffffff;
   }
 
@@ -68,7 +67,6 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-
     color: #b1b7c2;
   }
 }

@@ -33,29 +33,33 @@
 }
 
 .contact-opt {
-  margin-top: 20px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+
+  padding-right: 40px;
+  margin-top: 20px;
 }
 
-.email-opt {
+.select-opt {
   font-family: "Helvetica Neue";
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 39px;
+  cursor: pointer;
 
   color: #ffffff;
-  margin-right: 55px;
 }
 
-.phone-opt {
+.nonselect-opt {
   font-family: "Helvetica Neue";
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 38px;
 
+  cursor: pointer;
   color: #7a839a;
 }
 
@@ -68,9 +72,14 @@
   width: 100%;
   height: 40px;
   margin-top: 20px;
+  padding: 0 10px;
   background: #e9e9e9;
   border: 2px solid #d9d9d9;
   border-radius: 3px;
+}
+
+#phoneNb{
+  display: none;
 }
 
 .login-right_btn {
@@ -87,7 +96,7 @@
   }
 }
 @media (max-width: 700px) {
-  .login{
+  .login {
     padding-top: 450px;
   }
 }
@@ -100,26 +109,36 @@
   }
 
   .contact-opt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 4px;
     margin-top: 30px;
-    padding-right: 30px;
-    padding-left: 4px;
+    width: 100%;
     border: 1px solid #ffffff;
     border-radius: 26px;
     height: 52px;
-    width: fit-content;
+    width: fit-content; 
+  }
+
+  .select-opt {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
 
-  .email-opt {
+    padding-right: 0;
     background: #008cdb;
     border-radius: 26px;
     width: 145px;
     height: 45px;
+  }
+  .nonselect-opt{
     display: flex;
     align-items: center;
     justify-content: center;
+
+    width: 50%;
   }
 
   .input {

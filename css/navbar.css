@@ -1,8 +1,9 @@
 .navbar {
-  width: 100%;
-  margin: auto;
   display: flex;
   align-items: center;
+
+  width: 100%;
+  margin: auto;
   background-color: #041e33;
 }
 
@@ -37,13 +38,14 @@
 }
 
 .nav_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   height: 80px;
   width: 170px;
   background-color: #008cdb;
   color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   cursor: pointer;
 }
 
@@ -65,8 +67,19 @@ ul li {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 72px;
-  min-width: 100px;
+
+  height: 64px;
+  min-width: 150px;
+  border-bottom: 8px solid #041e33;
+  border-top: 8px solid #041e33;
+  
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.01em;
+  color: #ffffff;
 }
 
 .item-nav:hover {
@@ -78,7 +91,6 @@ ul li a {
   text-decoration: none;
   margin-right: 45px;
 }
-
 
 .menubar .menu-btn i {
   color: #fff;
@@ -110,14 +122,13 @@ ul li a {
     margin-left: 25px;
   }
   nav ul {
-    position: fixed;
+    display: none;
     top: 80px;
     left: -100%;
     background: #111;
     height: 100vh;
     width: 100%;
     text-align: center;
-    display: block;
     transition: all 0.3s ease;
   }
 
