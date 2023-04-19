@@ -2,528 +2,573 @@
 <html lang="en" dir="ltr">
 
 <head>
-    <meta charset="utf-8">
+  <meta charset="utf-8">
 
-    <title>
-        Landing Page
-    </title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/navbar.css">
-    <link rel="stylesheet" href="./css/img_bg.css">
-    <link rel="stylesheet" href="./css/options.css">
-    <link rel="stylesheet" href="./css/advise.css">
-    <link rel="stylesheet" href="./css/solutions.css">
-    <link rel="stylesheet" href="./css/potential.css">
-    <link rel="stylesheet" href="./css/login.css">
-    <link rel="stylesheet" href="./css/frequently_ques.css">
-    <link rel="stylesheet" href="./css/learn_more.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/dropdown.css">
+  <title>
+    Landing Page
+  </title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/img_bg.css">
+  <link rel="stylesheet" href="./css/options.css">
+  <link rel="stylesheet" href="./css/advise.css">
+  <link rel="stylesheet" href="./css/solutions.css">
+  <link rel="stylesheet" href="./css/potential.css">
+  <link rel="stylesheet" href="./css/login.css">
+  <link rel="stylesheet" href="./css/frequently_ques.css">
+  <link rel="stylesheet" href="./css/learn_more.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/dropdown.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
 
 <body class="scrollbar-hide">
-    <header>
-        <nav class="navbar">
-            <div class="menubar">
 
-                <label for="click" class="menu-btn">
-                    <i class="fas fa-bars"></i>
-                </label>
+  <script src="/js/function.js"></script>
 
-                <a class="nav_logo">
-                    <img src="./assets/logo.png">
+  <header>
+    <nav class="navbar">
+      <div class="menubar">
+
+        <label for="click" class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+
+        <a class="nav_logo">
+          <img src="./assets/logo.png">
+        </a>
+      </div>
+      <div class="nav_content">
+        <div class="nav_box"></div>
+        <ul>
+          <li>
+            <div id="services" class="dropdown" id="services_dropdown">
+              <div class="line-hover"></div>
+              <div id="dropbtn_services" class="dropbtn" onclick="dropdownFunc('dd_services','dropbtn_services')">
+                Services
+                <img class="arrow_down" src="./assets/arrow_down.png">
+              </div>
+              <div id="dd_services" class="dropdown-content">
+                <div class="list-dropdown">
+                  <div class="list-dropdown_item">
+                    <img class="list-dropdown_item-icon" src="./assets/home_work.png">
+                    <div class="list-dropdown_item-content"><span>Home Financing</span></div>
+                  </div>
+                  <div class="list-dropdown_item">
+                    <img class="list-dropdown_item-icon" src="./assets/Subtract.png">
+                    <div class="list-dropdown_item-content"><span>Investment</span></div>
+                  </div>
+                  <div class="list-dropdown_item">
+                    <img class="list-dropdown_item-icon" src="./assets/fact_check.png">
+                    <div class="list-dropdown_item-content"><span>Retirement Planning</span></div>
+                  </div>
+                  <div class="list-dropdown_item">
+                    <img class="list-dropdown_item-icon" src="./assets/account_balance_wallet.png">
+                    <div class="list-dropdown_item-content"><span>Superannuation</span></div>
+                  </div>
+                  <div class="list-dropdown_item">
+                    <img id="privacy_tip" class="list-dropdown_item-icon" src="./assets/privacy_tip.png">
+                    <div class="list-dropdown_item-content"><span>Risk Management</span></div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div id="approach" class="dropdown" id="services_dropdown">
+              <div class="line-hover"></div>
+              <div id="dropbtn_approach" class="dropbtn" onclick="dropdownFunc('dd_approach','dropbtn_approach')">
+                Our Approach
+                <img class="arrow_down" src="./assets/arrow_down.png">
+              </div>
+              <div id="dd_approach" class="dropdown-content">
+                <a class="list-dropdown_item-content" href="#">
+                  Investment Principles
                 </a>
+                <a class="list-dropdown_item-content" href="#">
+                  Ijarah Financing
+                </a>
+              </div>
+
             </div>
-            <div class="nav_content">
-                <div class="nav_box"></div>
-                <ul>
-                    <li>
-                        <div class="dropdown">
-                            <div class="dropbtn">
-                                Services
-                                <img class="arrow_down" src="./assets/arrow_down.png">
-                            </div>
-                            <div class="dropdown-content">
-                                <a href="#">Link 1</a>
-                                <a href="#">Link 2</a>
-                                <a href="#">Link 3</a>
-                            </div>
 
-                        </div>
-                        <div class="dropdown">
-                            <div class="dropbtn">
-                                Our Approach
-                                <img class="arrow_down" src="./assets/arrow_down.png">
-                            </div>
-                            <div class="dropdown-content">
-                                <a href="#">Link 1</a>
-                                <a href="#">Link 2</a>
-                                <a href="#">Link 3</a>
-                            </div>
-
-                        </div>
-
-                        <a class="item-nav" href="#">Shariah Compliance</a>
-                        <a class="item-nav" href="#">Knowledge and FAQ</a>
-                    </li>
-                </ul>
-                <div class="nav_btn">
-                    Apply Now
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <div class="img-bg">
-
-        <img class="img-bg_picture" src="./assets/background.png">
-        <img class="img-bg_picturemb" src="./assets/bg-full.png">
-        <div class="img-bg_frame">
-            <div class="img-bg_content">
-                <div class="img-bg_title">
-                    <span>
-                        Faith Based Financial Solutions
-                    </span>
-                </div>
-                <div class="desc">
-                    <span class="img-bg_desc">
-                        Sharia compliant financial solutions for modern day Muslims in Australia. Unlock your
-                        financial aspirations with uncompromising faith.
-                    </span>
-                </div>
-                <div class="img-bg_btn">
-                    <span class="img-bg_btncontent">Finance me</span>
-                </div>
-            </div>
+            <a class="item-nav" href="#">Shariah Compliance</a>
+            <a class="item-nav" href="#">Knowledge and FAQ</a>
+          </li>
+        </ul>
+        <div class="nav_btn">
+          Apply Now
         </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="img-bg">
+
+    <img class="img-bg_picture" src="./assets/background.png">
+    <img class="img-bg_picturemb" src="./assets/bg-full.png">
+    <div class="img-bg_frame">
+      <div class="img-bg_content">
+        <div class="img-bg_title">
+          <span>
+            Faith Based Financial Solutions
+          </span>
+        </div>
+        <div class="desc">
+          <span class="img-bg_desc">
+            Sharia compliant financial solutions for modern day Muslims in Australia. Unlock your
+            financial aspirations with uncompromising faith.
+          </span>
+        </div>
+        <div class="img-bg_btn">
+          <span class="img-bg_btncontent">Finance me</span>
+        </div>
+      </div>
     </div>
+  </div>
+
+  <div class="under">
+
+    <div class="options">
+      <p>
+        Get to our Islamic Based:
+      </p>
+      <div class="options_col">
+        <div class="options_col1">
+          <div class="options_padding">
+            <div class="options-items">
+
+              <div class="options-item">
+                <img class="options-item_img1" src="./assets/home_work.png">
+                <img class="options-item_img2" src="./assets/account (3).png">
+                <span class="options-item_content">Home Loans</span>
+              </div>
+              <div class="arrow">
+                <img class="arrow1" src="./assets/arrow_right.png">
+                <img class="arrow2" src="./assets/arrow-white.png">
+              </div>
+            </div>
+          </div>
+          <div class="options_padding">
+            <div class="options-items">
+              <div class="options-item">
+                <img class="options-item_img1" src="./assets/account_balance_wallet.png">
+                <img class="options-item_img2" src="./assets/account (1).png">
+                <span class="options-item_content">Superannuation</span>
+              </div>
+              <div class="arrow">
+                <img class="arrow1" src="./assets/arrow_right.png">
+                <img class="arrow2" src="./assets/arrow-white.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="options_col2">
+          <div class="options_padding">
+            <div class="options-items">
+              <div class="options-item">
+                <img class="options-item_img1" src="./assets/fact_check.png">
+                <img class="options-item_img2" src="./assets/account (2).png">
+
+                <span class="options-item_content">Wealth & Risk Management</span>
+              </div>
+              <div class="arrow">
+                <img class="arrow1" src="./assets/arrow_right.png">
+                <img class="arrow2" src="./assets/arrow-white.png">
+              </div>
+            </div>
+          </div>
+          <div class="options_padding">
+            <div class="options-items">
+              <div class="options-item">
+                <img class="options-item_img1" src="./assets/Subtract.png">
+                <img class="options-item_img2" src="./assets/Subtract1.png">
+                <span class="options-item_content">Shariah Compliant Investments </span>
+              </div>
+              <div class="arrow">
+                <img class="arrow1" src="./assets/arrow_right.png">
+                <img class="arrow2" src="./assets/arrow-white.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="advise">
+      <div class="advise_content">
+        <div>
+          <span class="advise_title">
+            Have Faith In Your Finances
+          </span>
+        </div>
+
+        <div class="advise_desc">
+          <span>
+            We’re for the modern day Muslim. Build wealth, manage risk, plan retirement, and own a home, all
+            in
+            line
+            with your beliefs.
+          </span>
+        </div>
+        <div class="advise_desc">
+          <span>
+            Our team of experts and advisors have uncompromising faith in you. Join the wave of Muslims who
+            are
+            taking
+            control of their money.
+
+          </span>
+        </div>
+
+        <div class="img-bg_btn">
+          <span class="img-bg_btncontent">Advise me</span>
+        </div>
+      </div>
+      <img class="advise_img" src="./assets/bg2.png">
+    </div>
+
+    <div class="solutions">
+      <span class="solution-title">
+        Simple Solutions That Work For You
+      </span>
+      <div class="solutions-item">
+        <div class="solution">
+          <img class="solution_img" src="./assets/Union.png">
+          <span class="solution_content">
+            Step-by-step guidance to ensure Sharia compliance
+          </span>
+        </div>
+        <div class="solution">
+          <img class="solution_img" src="./assets/Vector.png">
+          <span class="solution_content">
+            Strategic retirement planning & realistic goal setting
+          </span>
+        </div>
+        <div class="solution">
+          <img class="solution_img" src="./assets/Group 49.png">
+          <span class="solution_content">
+            Protection with personalised risk management solutions
+          </span>
+        </div>
+        <div class="solution">
+          <img class="solution_img" src="./assets/Group 50.png">
+          <span class="solution_content">
+            Sharia compliant investment solutions
+          </span>
+        </div>
+        <div class="solution">
+          <img class="solution_img" src="./assets/add_chart.png">
+          <span class="solution_content">
+            Market competitive rates for Islamic home loans
+          </span>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <div class="login-section">
 
     <div class="under">
 
-        <div class="options">
-            <p>
-                Get to our Islamic Based:
-            </p>
-            <div class="options_col">
-                <div class="options_col1">
-                    <div class="options-items">
-                        <div class="options-item">
-                            <img src="./assets/home_work.png">
-                            <span class="options-item_content">Home Loans</span>
-                        </div>
-                        <div class="arrow">
-                            <img src="./assets/arrow_right.png">
-                        </div>
-                    </div>
-                    <div class="options-items">
-                        <div class="options-item">
-                            <img src="./assets/account_balance_wallet.png">
-                            <span class="options-item_content">Superannuation</span>
-                        </div>
-                        <div class="arrow">
-                            <img src="./assets/arrow_right.png">
-                        </div>
-                    </div>
-                </div>
-                <div class="options_col2">
-                    <div class="options-items">
-                        <div class="options-item">
-                            <img src="./assets/fact_check.png">
-                            <span class="options-item_content">Wealth & Risk Management</span>
-                        </div>
-                        <div class="arrow">
-                            <img src="./assets/arrow_right.png">
-                        </div>
-                    </div>
-                    <div class="options-items">
-                        <div class="options-item">
-                            <img src="./assets/Subtract.png">
-                            <span class="options-item_content">Shariah Compliant Investments </span>
-                        </div>
-                        <div class="arrow">
-                            <img src="./assets/arrow_right.png">
-                        </div>
-                    </div>
-                </div>
+      <div class="login">
+        <div class="potential">
+          <div class="potential-title">
+            <span>Your Money, Your Choice.</span>
+            <div>
+              <span>Discover your potential</span>
             </div>
+
+          </div>
+          <div class="potential-items">
+            <div class="potential-item">
+              <img class="potential-img" src="./assets/Group.png">
+              <div class="potential-content">
+                Cash Flow/Budgeting
+              </div>
+            </div>
+            <div class="potential-item">
+              <img class="potential-img" src="./assets/account (1).png">
+              <div class="potential-content">
+                Superannuation
+
+              </div>
+            </div>
+
+            <div class="potential-item">
+              <img class="potential-img" src="./assets/Group (1).png">
+              <div class="potential-content">
+                Risk Management
+              </div>
+            </div>
+            <div class="potential-item">
+              <img class="potential-img" src="./assets/account (3).png">
+              <div class="potential-content">
+                Islamic Home Loans
+              </div>
+            </div>
+            <div class="potential-item">
+              <img class="potential-img" src="./assets/Subtract1.png">
+              <div class="potential-content">
+                Investments
+              </div>
+            </div>
+
+            <div class="potential-item">
+              <img class="potential-img" src="./assets/account (2).png">
+              <div class="potential-content">
+                Retirement Planning
+              </div>
+            </div>
+
+          </div>
         </div>
 
-        <div class="advise">
-            <div class="advise_content">
-                <div>
-                    <span class="advise_title">
-                        Have Faith In Your Finances
-                    </span>
-                </div>
+        <div class="login-title">
+          <span>
+            Restructure Your Wealth Islamically
+          </span>
+        </div>
+        <div class="login-field">
+          <div class="contact-select">
+            <div class="select-ques">
+              <span>
+                How would you like to be contacted?
+              </span>
+            </div>
+            <div class="contact-opt">
+              <div id="email" onclick="contactSelect('email','emailAd','phoneNb')" class="select-opt">Email</div>
+              <div id="phone" onclick="contactSelect('phone','phoneNb','emailAd')" class="nonselect-opt">Phone</div>
+            </div>
+          </div>
+          <div class="input">
+            <input placeholder="Name" class="input-field" type="text" id="name" name="name">
+            <br>
+            <input placeholder="Phone number" class="input-field" type="text" id="phoneNb" name="phone">
+            <input placeholder="Email address" class="input-field" type="text" id="emailAd" name="email">
+          </div>
+        </div>
+        <div class="login-right_btn">
+          <div class="img-bg_btn">
+            <span class="img-bg_btncontent">Recieve an email</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
-                <div class="advise_desc">
-                    <span>
-                        We’re for the modern day Muslim. Build wealth, manage risk, plan retirement, and own a home, all
-                        in
-                        line
-                        with your beliefs.
-                    </span>
-                </div>
-                <div class="advise_desc">
-                    <span>
-                        Our team of experts and advisors have uncompromising faith in you. Join the wave of Muslims who
-                        are
-                        taking
-                        control of their money.
+    <div class="under">
+      <div class="frequently-ques">
+        <div class="frequently-ques_title">
+          Frequently Asked Questions
+        </div>
+        <div class="frequently-ques_content">
+          <div class="frequently-ques-col">
+            <div class="ques-content_title">
+              <span>
+                How do I qualify for a Sharia compliant home loan?
+              </span>
+            </div>
+            <div class="ques-content_desc">
+              <span>
+                Despite following the Islamic Banking system, Afiyah is still bound by Australian
+                lending
+                legislation. All of our financial products are governed by the National Credit Consumer
+                Protection Act - your financial health is protected by the Australian Government.
+              </span>
+            </div>
+            <div class="ques-content_desc">
+              <span>
+                We take multiple factors into consideration when determining your ability to borrow
+                money.
+                Speak
+                to one of our advisors today to learn more about how we evaluate each and every
+                application.
+              </span>
+            </div>
+          </div>
+          <div class="frequently-ques-col">
+            <div class="ques-content_title">
+              <span>
+                What investments are Sharia compliant?
+              </span>
+            </div>
 
-                    </span>
-                </div>
+            <div class="ques-content_desc">
+              <span>
+                Islamic Banking does not allow investments into securities that generate money off
+                interest
+                related payments. Afiyah does not invest your money into traditional bonds but rather
+                private
+                equity funds and other related products that are Sharia compliant.
+              </span>
+            </div>
+            <div class="ques-content_title">
+              <span>
+                Does Afiyah hold a credit licence?
+              </span>
+            </div>
 
+            <div class="ques-content_desc">
+              <span>
+                Yes. We follow all relevant legislation. We follow Islamic Banking principles to the
+                best of our
+                ability within the current legislative framework.
+
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="under">
+      <div class="learn-more">
+        <div class="learn-more_info">
+          <div class="learn-more_flex">
+            <div class="learn-more_col1">
+              <div class="learn-more_title">
+                <span>
+                  Learn more about Islamic Finance
+                </span>
+              </div>
+              <div class="learn-more_content">
+                <span>
+                  If you’re uncertain on whether Islamic finance is the right choice for you and your
+                  family,
+                  we encourage you to read through our resources. Written by our team of experts,
+                  you’ll
+                  get a
+                  walkthrough of the principles of faith based finance and be equipped with all the
+                  essentials
+                  to grow your personal finance knowledge.
+                </span>
+              </div>
+              <div class="learn-more_content">
+                <span>
+                  Learn to live and borrow righteously, with Afiyah.
+                </span>
+              </div>
+              <div class="learn-more_btn">
                 <div class="img-bg_btn">
-                    <span class="img-bg_btncontent">Advise me</span>
+                  <span class="img-bg_btncontent">Free Ebook</span>
                 </div>
+                <div class="resource-btn">
+                  <span class="resource_btncontent">Educational Resources</span>
+                </div>
+              </div>
             </div>
-            <img class="advise_img" src="./assets/bg2.png">
+            <div class="learn-more_col2">
+              <img class="learn-more_img" src="./assets/bg3.png">
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
 
-        <div class="solutions">
-            <span class="solution-title">
-                Simple Solutions That Work For You
+  </div>
+
+  <div class="box-distance"></div>
+
+  <footer class="footer">
+
+    <div class="under">
+      <div class="footer-section">
+        <div class="block1">
+          <div class="">
+            <img src="./assets/logo.png">
+          </div>
+          <div class="block1-title">
+            <span>
+              Faith Based Financial Solutions
             </span>
-            <div class="solutions-item">
-                <div class="solution">
-                    <img class="solution_img" src="./assets/Union.png">
-                    <span class="solution_content">
-                        Step-by-step guidance to ensure Sharia compliance
-                    </span>
-                </div>
-                <div class="solution">
-                    <img class="solution_img" src="./assets/Vector.png">
-                    <span class="solution_content">
-                        Strategic retirement planning & realistic goal setting
-                    </span>
-                </div>
-                <div class="solution">
-                    <img class="solution_img" src="./assets/Group 49.png">
-                    <span class="solution_content">
-                        Protection with personalised risk management solutions
-                    </span>
-                </div>
-                <div class="solution">
-                    <img class="solution_img" src="./assets/Group 50.png">
-                    <span class="solution_content">
-                        Sharia compliant investment solutions
-                    </span>
-                </div>
-                <div class="solution">
-                    <img class="solution_img" src="./assets/add_chart.png">
-                    <span class="solution_content">
-                        Market competitive rates for Islamic home loans
-                    </span>
-                </div>
-                <div class="solution"></div>
-            </div>
+          </div>
+          <div class="finance-btn">
+            <span class="finance_btncontent">Finance me</span>
+          </div>
+
         </div>
+        <div class="block2">
+          <div class="block2-content">
+            <span>
+              Afiyah acknowledges the traditional owners of the land on which we work and live. We pay our
+              respects to Elders past, present and emerging and celebrate the food, stories and culture of
+              all First Nations, Aboriginal and Torres Strait communities.
 
+            </span>
+          </div>
+          <div class="block2_list-icon">
+            <img class="block2_icon-link" src="./assets/Facebook - Negative.png">
+            <img class="block2_icon-link" src="./assets/Instagram - Negative.png">
+            <img class="block2_icon-link" src="./assets/LinkedIn - Negative.png">
+            <img class="block2_icon-link" src="./assets/TikTok - Negative.png">
 
+          </div>
+        </div>
+        <div class="block3">
+          <div class="block3-title">
+            <span>
+              Services
+            </span>
+          </div>
+          <div class="block3-content">
+            <spand>Home Financing</spand>
+            <br>
+            <spand>Superannuation</spand>
+            <br>
+            <spand>Investments</spand>
+            <br>
+            <spand>Risk Management</spand>
+            <br>
+            <spand> Retirement Planning</spand>
+          </div>
+          <div class="block3-title">
+            <span>
+              Our Approach
+            </span>
+          </div>
+
+          <div class="block3-content">
+
+            <span> Investment Principles</span><br>
+            <span> Ijarah Financing</span>
+
+          </div>
+        </div>
+        <div class="block4">
+          <div class="block4-content">
+            <span>
+              Shariah Compliance
+            </span>
+          </div>
+          <div class="block4-content">
+            <span> Knowledge and FAQ </span>
+          </div>
+        </div>
+      </div>
+      <div class="privacy-bar">
+        <div class="bar-items">
+          <div class="bar-left">
+            <div class="bar-content">
+              <span>Privacy Policy</span>
+            </div>
+            <div class="bar-content">
+              <span>Terms of Use</span>
+            </div>
+            <div class="bar-content">
+              <span>Legal</span>
+            </div>
+          </div>
+          <div class="bar-right">
+            <span>Afiyah © 2022 All Rights Reserved</span>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="login-section">
-
-        <div class="under">
-
-            <div class="login">
-                <div class="potential">
-                    <div class="potential-title">
-                        <span>Your Money, Your Choice.</span>
-                        <div>
-                            <span>Discover your potential</span>
-                        </div>
-
-                    </div>
-                    <div class="potential-items">
-                        <div class="potential-item">
-                            <img class="potential-img" src="./assets/Group.png">
-                            <div class="potential-content">
-                                Cash Flow/Budgeting
-                            </div>
-                        </div>
-                        <div class="potential-item">
-                            <img class="potential-img" src="./assets/account (1).png">
-                            <div class="potential-content">
-                                Superannuation
-
-                            </div>
-                        </div>
-
-                        <div class="potential-item">
-                            <img class="potential-img" src="./assets/Group (1).png">
-                            <div class="potential-content">
-                                Risk Management
-                            </div>
-                        </div>
-                        <div class="potential-item">
-                            <img class="potential-img" src="./assets/account (3).png">
-                            <div class="potential-content">
-                                Islamic Home Loans
-                            </div>
-                        </div>
-                        <div class="potential-item">
-                            <img class="potential-img" src="./assets/Subtract1.png">
-                            <div class="potential-content">
-                                Investments
-                            </div>
-                        </div>
-
-                        <div class="potential-item">
-                            <img class="potential-img" src="./assets/account (2).png">
-                            <div class="potential-content">
-                                Retirement Planning
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="login-title">
-                    <span>
-                        Restructure Your Wealth Islamically
-                    </span>
-                </div>
-                <div class="login-field">
-                    <div class="contact-select">
-                        <div class="select-ques">
-                            <span>
-                                How would you like to be contacted?
-                            </span>
-                        </div>
-                        <div class="contact-opt">
-                            <div class="email-opt">Email</div>
-                            <div class="phone-opt">Phone</div>
-                        </div>
-                    </div>
-                    <div class="input">
-                        <input placeholder="  Name" class="input-field" type="text" id="name" name="name">
-                        <br>
-                        <input placeholder="  Email address" class="input-field" type="text" id="email" name="email">
-                    </div>
-                </div>
-                <div class="login-right_btn">
-                    <div class="img-bg_btn">
-                        <span class="img-bg_btncontent">Recieve an email</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="under">
-            <div class="frequently-ques">
-                <div class="frequently-ques_title">
-                    Frequently Asked Questions
-                </div>
-                <div class="frequently-ques_content">
-                    <div class="frequently-ques-col">
-                        <div class="ques-content_title">
-                            <span>
-                                How do I qualify for a Sharia compliant home loan?
-                            </span>
-                        </div>
-                        <div class="ques-content_desc">
-                            <span>
-                                Despite following the Islamic Banking system, Afiyah is still bound by Australian
-                                lending
-                                legislation. All of our financial products are governed by the National Credit Consumer
-                                Protection Act - your financial health is protected by the Australian Government.
-                            </span>
-                        </div>
-                        <div class="ques-content_desc">
-                            <span>
-                                We take multiple factors into consideration when determining your ability to borrow
-                                money.
-                                Speak
-                                to one of our advisors today to learn more about how we evaluate each and every
-                                application.
-                            </span>
-                        </div>
-                    </div>
-                    <div class="frequently-ques-col">
-                        <div class="ques-content_title">
-                            <span>
-                                What investments are Sharia compliant?
-                            </span>
-                        </div>
-
-                        <div class="ques-content_desc">
-                            <span>
-                                Islamic Banking does not allow investments into securities that generate money off
-                                interest
-                                related payments. Afiyah does not invest your money into traditional bonds but rather
-                                private
-                                equity funds and other related products that are Sharia compliant.
-                            </span>
-                        </div>
-                        <div class="ques-content_title">
-                            <span>
-                                Does Afiyah hold a credit licence?
-                            </span>
-                        </div>
-
-                        <div class="ques-content_desc">
-                            <span>
-                                Yes. We follow all relevant legislation. We follow Islamic Banking principles to the
-                                best of our
-                                ability within the current legislative framework.
-
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="under">
-            <div class="learn-more">
-                <div class="learn-more_info">
-                    <div class="learn-more_flex">
-                        <div class="learn-more_col1">
-                            <div class="learn-more_title">
-                                <span>
-                                    Learn more about Islamic Finance
-                                </span>
-                            </div>
-                            <div class="learn-more_content">
-                                <span>
-                                    If you’re uncertain on whether Islamic finance is the right choice for you and your
-                                    family,
-                                    we encourage you to read through our resources. Written by our team of experts,
-                                    you’ll
-                                    get a
-                                    walkthrough of the principles of faith based finance and be equipped with all the
-                                    essentials
-                                    to grow your personal finance knowledge.
-                                </span>
-                            </div>
-                            <div class="learn-more_content">
-                                <span>
-                                    Learn to live and borrow righteously, with Afiyah.
-                                </span>
-                            </div>
-                            <div class="learn-more_btn">
-                                <div class="img-bg_btn">
-                                    <span class="img-bg_btncontent">Free Ebook</span>
-                                </div>
-                                <div class="resource-btn">
-                                    <span class="resource_btncontent">Educational Resources</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="learn-more_col2">
-                            <img class="learn-more_img" src="./assets/bg3.png">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="box-distance"></div>
-
-    <footer class="footer">
-
-        <div class="under">
-            <div class="footer-section">
-                <div class="block1">
-                    <div class="">
-                        <img src="./assets/logo.png">
-                    </div>
-                    <div class="block1-title">
-                        <span>
-                            Faith Based Financial Solutions
-                        </span>
-                    </div>
-                    <div class="finance-btn">
-                        <span class="finance_btncontent">Finance me</span>
-                    </div>
-
-                </div>
-                <div class="block2">
-                    <div class="block2-content">
-                        <span>
-                            Afiyah acknowledges the traditional owners of the land on which we work and live. We pay our
-                            respects to Elders past, present and emerging and celebrate the food, stories and culture of
-                            all First Nations, Aboriginal and Torres Strait communities.
-
-                        </span>
-                    </div>
-                    <div class="block2_list-icon">
-                        <img class="block2_icon-link" src="./assets/Facebook - Negative.png">
-                        <img class="block2_icon-link" src="./assets/Instagram - Negative.png">
-                        <img class="block2_icon-link" src="./assets/LinkedIn - Negative.png">
-                        <img class="block2_icon-link" src="./assets/TikTok - Negative.png">
-
-                    </div>
-                </div>
-                <div class="block3">
-                    <div class="block3-title">
-                        <span>
-                            Services
-                        </span>
-                    </div>
-                    <div class="block3-content">
-                        <spand>Home Financing</spand>
-                        <br>
-                        <spand>Superannuation</spand>
-                        <br>
-                        <spand>Investments</spand>
-                        <br>
-                        <spand>Risk Management</spand>
-                        <br>
-                        <spand> Retirement Planning</spand>
-                    </div>
-                    <div class="block3-title">
-                        <span>
-                            Our Approach
-                        </span>
-                    </div>
-
-                    <div class="block3-content">
-
-                        <span> Investment Principles</span><br>
-                        <span> Ijarah Financing</span>
-
-                    </div>
-                </div>
-                <div class="block4">
-                    <div class="block4-content">
-                        <span>
-                            Shariah Compliance
-                        </span>
-                    </div>
-                    <div class="block4-content">
-                        <span> Knowledge and FAQ </span>
-                    </div>
-                </div>
-            </div>
-            <div class="privacy-bar">
-                <div class="bar-items">
-                    <div class="bar-left">
-                        <div class="bar-content">
-                            <span>Privacy Policy</span>
-                        </div>
-                        <div class="bar-content">
-                            <span>Terms of Use</span>
-                        </div>
-                        <div class="bar-content">
-                            <span>Legal</span>
-                        </div>
-                    </div>
-                    <div class="bar-right">
-                        <span>Afiyah © 2022 All Rights Reserved</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+  </footer>
 
 </body>
 

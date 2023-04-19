@@ -4,9 +4,10 @@
 }
 
 .footer-section {
-  padding-top: 60px;
   display: flex;
   justify-content: space-between;
+
+  padding-top: 60px;
 }
 
 .block1-title {
@@ -21,6 +22,10 @@
 }
 
 .finance-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   cursor: pointer;
   margin-top: 30px;
   padding-left: 30px;
@@ -29,9 +34,6 @@
   border-radius: 26px;
   height: 52px;
   width: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .finance-btn:hover{
@@ -39,15 +41,15 @@
 }
 
 .finance_btncontent {
-  font-family: "Helvetica Neue";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 80px;
   display: flex;
   align-items: center;
   text-align: center;
 
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 80px;  
   color: #ffffff;
 }
 
@@ -82,26 +84,26 @@
 }
 
 .bar-right {
+  display: flex;
+  align-items: center;
+
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
   font-size: 12px;
   line-height: 14px;
-  display: flex;
-  align-items: center;
-
   color: #ffffff;
 }
 
 .block2-content {
+  display: flex;
+  align-items: center;
+
   font-family: "Helvetica Neue";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
-  display: flex;
-  align-items: center;
-
   color: #ffffff;
 }
 
@@ -134,16 +136,15 @@
   margin-bottom: 15px;
 }
 .block4-content {
+  display: flex;
+  align-items: center;
+
   padding: 15px 0;
   font-family: "Helvetica Neue";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-
-  display: flex;
-  align-items: center;
-
   color: #ffffff;
 }
 
@@ -192,11 +193,12 @@
 }
 @media (max-width: 555px) {
   .footer-section {
-    position: relative;
-    padding-top: 60px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    position: relative;
+
+    padding-top: 60px;
     padding: 20px;
   }
   .block1 {
@@ -228,6 +230,7 @@
   .bar-items {
     display: flex;
     flex-direction: column;
+    
     padding-bottom: 20px;
   }
 }

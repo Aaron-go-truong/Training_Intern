@@ -17,20 +17,21 @@
 }
 
 .potential-items {
-  border-top: 1px solid #e5e5e5;
-  margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+
+  border-top: 1px solid #e5e5e5;
+  margin-top: 30px;
 }
 
 .potential-item {
-  flex-basis: 33.333333%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: start;
+  flex-basis: 33.333333%;
 }
 .potential-content {
   margin-left: 25px;
