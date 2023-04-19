@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./css/frequently_ques.css">
     <link rel="stylesheet" href="./css/learn_more.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/dropdown.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,7 +26,7 @@
 </head>
 
 
-<body>
+<body class="scrollbar-hide">
     <header>
         <nav class="navbar">
             <div class="menubar">
@@ -42,14 +43,33 @@
                 <div class="nav_box"></div>
                 <ul>
                     <li>
-                        <a href="#">Services
-                            <img class="arrow_down" src="./assets/arrow_down.png">
-                        </a>
-                        <a href="#">Our Approach
-                            <img class="arrow_down" src="./assets/arrow_down.png">
-                        </a>
-                        <a href="#">Shariah Compliance</a>
-                        <a href="#">Knowledge and FAQ</a>
+                        <div class="dropdown">
+                            <div class="dropbtn">
+                                Services
+                                <img class="arrow_down" src="./assets/arrow_down.png">
+                            </div>
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+
+                        </div>
+                        <div class="dropdown">
+                            <div class="dropbtn">
+                                Our Approach
+                                <img class="arrow_down" src="./assets/arrow_down.png">
+                            </div>
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+
+                        </div>
+
+                        <a class="item-nav" href="#">Shariah Compliance</a>
+                        <a class="item-nav" href="#">Knowledge and FAQ</a>
                     </li>
                 </ul>
                 <div class="nav_btn">
